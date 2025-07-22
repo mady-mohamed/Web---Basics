@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4; 
+}
+
+body {
+    max-width: 1000px; 
+    margin: 0 auto;    
+    background-color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    padding: 20px;
+}
+
+header, main, footer {
+    width: 100%; 
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav a {
+    color: #3a3a3a;
+    text-decoration: none;
+    /* Current: margin: 0 15px; */
+
+    /* Change this to control spacing */
+    margin: 0 20px; /* Adds 20px margin to the left and right of each link */
+    font-weight: bold;
+    display: inline-block; /* Essential if you want top/bottom margin or precise width */
+}
+
+nav {
+    text-align: center; /* Still centers the group of links */
+    margin-top: 10px;
+    padding: 0 10px; /* Add some internal padding to the nav container */
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+}
+
+h2 {
+    color:#00000098;
+    font-size: 16px;
+}
+
+#main{
+    padding: 20px;
+}
+a[target="_blank"] {
+    text-decoration: none;
+    color: #28a745; /* Green color for external links */
+}
+
+/* General styles for the contact section for a clean layout */
+#contact {
+  background-color: #f4f7f6;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the heading to make it stand out */
+#contact h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Styling for labels to ensure they are clear and well-spaced */
+#contact label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* General styling for all input fields and the textarea for a consistent look. [1] */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't affect the overall width. [8] */
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+/* Provides visual feedback when a user clicks on an input field. [1, 2] */
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Specific styling for the textarea to allow vertical resizing */
+#contact textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Styling for the submit button to make it visually prominent. [1, 4] */
+#contact input[type="submit"] {
+  width: 100%;
+  background-color: #007BFF;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Changes the button color on hover to indicate interactivity. [2, 4] */
+#contact input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+img {
+    display: block;
+    margin:auto;
+    width: 50%;
+}
+
+/* --- Styles for the new 'About Me' section --- */
+
+/* Style for the main section container for better spacing */
+#about {
+  background-color: #fdfdfd; /* A very light grey to subtly stand out */
+  padding: 25px;
+  border-radius: 8px; /* Softens the corners */
+  margin-bottom: 20px; /* Adds space before the next section */
+  border: 1px solid #eee; /* A light border for definition */
+}
+
+/* Style for the new subheadings (Education, Experience) */
+#about h3 {
+  color: #0056b3; /* A professional blue to stand out */
+  font-size: 1.1em; /* Slightly larger than the paragraph text */
+  margin-top: 20px;   /* Space above each new subsection */
+  margin-bottom: 10px; /* Space before the list starts */
+  border-bottom: 2px solid #f0f0f0; /* A subtle underline */
+  padding-bottom: 5px;
+}
+
+/* Style for the lists to remove default bullets and padding */
+#about ul {
+  list-style-type: none; /* Removes the default bullet points */
+  padding-left: 0;       /* Removes the default indentation */
+  margin-left: 0;
+}
+
+/* Style for individual list items for proper spacing */
+#about li {
+  margin-bottom: 15px; /* Adds space between each entry (e.g., between degrees) */
+  line-height: 1.5;    /* Improves readability of multi-line items */
+}
+
+/* Bolds the titles within each list item (e.g., "B.Sc. in Software Engineering") */
+#about li strong {
+    font-weight: bold;
+    color: #333; /* A dark grey for titles */
+}
+
+/* Styles the secondary text (like the university name) */
+#about li em {
+  color: #555; /* A slightly lighter grey for secondary info */
+  display: block; /* Puts the university/company on a new line */
+  margin-top: 4px;
+}
+
+/* Styles the contact info at the top for good alignment */
+#about #contact-info {
+    text-align: left; /* Aligns your contact info to the left */
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+/* Make the email link in your info look good */
+#about a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
