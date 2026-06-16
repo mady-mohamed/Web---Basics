@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 1.6;
     margin: 0; 
     padding: 0; 
@@ -14,6 +14,7 @@ body {
     padding: 20px;
 }
 
+
 header, main, footer {
     width: 100%; 
     margin-left: 0;
@@ -21,8 +22,11 @@ header, main, footer {
 }
 
 header h1 {
-    text-align: center;
-}
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  }
 
 nav a {
     color: #3a3a3a;
@@ -39,6 +43,8 @@ nav {
     text-align: center; /* Still centers the group of links */
     margin-top: 10px;
     padding: 0 10px; /* Add some internal padding to the nav container */
+    position: sticky; 
+    top: 0;
 }
 
 p {
@@ -48,6 +54,7 @@ p {
 
 h2 {
     color:#00000098;
+    font-weight: 700;
     font-size: 16px;
 }
 
@@ -55,8 +62,8 @@ h2 {
     padding: 20px;
 }
 a[target="_blank"] {
-    text-decoration: none;
-    color: #28a745; /* Green color for external links */
+    text-decoration: underline;
+    color: #0074d9; /* Green color for external links - #28a745 blue - #0074d9*/
 }
 
 /* General styles for the contact section for a clean layout */

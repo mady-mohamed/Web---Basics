@@ -3,110 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Portfolio website for Mohamed Magdy Mady, software engineering graduate focused on data science, analytics, and applied AI.">
+  <title>Mohamed Magdy Mady | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Mohamed Magdy Mohamed</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Mohamed Magdy Mady home">MMM</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h3>About Me</h3>
-      
-      <!-- Personal and Contact Information -->
-      <div id="contact-info">
-          <p>
-              <strong>Mohamed Magdy</strong><br>
-              75 Bamboo extension Palm Hills, Giza<br>
-              <a href="mailto:mohamed.mady2000@gmail.com">mohamed.mady2000@gmail.com</a> • +201006389017
-          </p>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="pipeline-canvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="eyebrow">Software Engineering Graduate | Data Science | Applied AI</p>
+        <h1 id="hero-title">Mohamed Magdy Mady</h1>
+        <p class="hero-copy">
+          I build Python systems that turn messy web data into clean market intelligence, semantic product clusters,
+          computer vision pipelines, and dashboards that support business decisions.
+        </p>
+        <div class="hero-actions" aria-label="Contact links">
+          <a class="button primary" href="mailto:mohamed.mady2000@gmail.com">Email me</a>
+          <a class="button secondary" href="assets/Mohamed-Magdy-Mady-CV.pdf" target="_blank">Download CV</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/mohamed-magdy-mady" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button secondary" href="https://github.com/mady-mohamed" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
       </div>
-    
-      <!-- Education -->
-      <h3>Education</h3>
-      <ul>
-          <li>
-              <strong>B.Sc. in Software Engineering</strong> (8th Semester)<br>
-              <em>Arab Academy for Science, Technology and Maritime Transport, Cairo</em> - Expected January 2026
-          </li>
-          <li>
-              <strong>High School Diploma with Honors</strong><br>
-              <em>Heritage International School, 6th of October, Giza</em> - 2018
-          </li>
-          <li>
-              <strong>Java Programming & Problem Solving</strong><br>
-              <em>Oxford Summer Course, Oxford, UK</em> - July 2018
-          </li>
-      </ul>
-    
-      <!-- Experience -->
-      <h3>Experience</h3>
-      <ul>
-          <li>
-              <strong>Customer Relations</strong><br>
-              <em>Darwinz AI, Shorouk, Cairo</em> - July to September 2024
-          </li>
-      </ul>
+      <aside class="hero-panel" aria-label="Portfolio snapshot">
+        <div>
+          <span class="metric">10,000+</span>
+          <span class="metric-label">Products extracted and structured</span>
+        </div>
+        <div>
+          <span class="metric">NLP</span>
+          <span class="metric-label">SentenceTransformers, similarity, clustering</span>
+        </div>
+        <div>
+          <span class="metric">CV</span>
+          <span class="metric-label">MediaPipe pose and landmark pipelines</span>
+        </div>
+      </aside>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS</li>
-        <li>JS</li>
-        <li>React</li>
-        <li>Python</li>
-        <li>C++</li>
-      </ul>
+    <section class="section intro" aria-label="Profile summary">
+      <div class="section-kicker">Profile</div>
+      <p>
+        Software engineering graduate from the Arab Academy for Science, Technology and Maritime Transport, focused on
+        data science, analytics, and applied AI. I enjoy connecting the full loop: collection, cleaning, modeling,
+        visualization, and decision support.
+      </p>
     </section>
 
-    <section id="projects">
-      <h2>Latest Projects</h2>
-      <article>
-        <a href="https://github.com/mady-mohamed/Pacman" target="_blank">Pacman Game</a>
-        <p>
-          This project is an implementation of the classic Pacman game built with Python. It features core game mechanics, including Pacman and ghost movement, score tracking, and level progression. A key aspect of this project is the integration of a simple A*, and greedy algorithms for intelligent ghost movement, with certain performance-critical elements of the A* algorithm implemented in C++ and integrated via `ctypes`. The game boasts a user- interface developed using Pygame and is structured into modular components for clear organization of game logic, settings, and menu handling. While currently Windows-only, the project demonstrates a solid understanding of game development principles and algorithm implementation.
-        </p>
-        <img src="pacman.png" alt="Pacman Game Presentation" width="500">
-        <br><br>      
-      </article>
-      <article>
-        <a href="https://www.figma.com/design/MFFdtHlZwbF8nuZtuDaw6i/Project-HCI?node-id=0-1&t=KghdqgfSKfTugLXV-1" target="_blank">UI/UX - Boxing News Application</a>
-        <p>
-          This was a collaborative university project to design "Ringside," an all-in-one mobile application for boxing enthusiasts. The app aims to solve the fragmented user experience of following the sport by integrating live updates, detailed statistics, and personalized news. As part of a team university project, we developed "Ringside," a comprehensive mobile app concept designed to centralize the world of boxing for fans. We identified a key problem: fans lack a single, engaging platform for live scores, in-depth stats, and personalized news. <br><br>
-          I focused on the UI/UX design for "Ringside," a concept for a modern boxing news application. The goal was to create an intuitive and engaging platform for boxing fans. My responsibilities centered on the design process within Figma, where I developed the visual interface from early sketches to a high-fidelity, interactive prototype. I also enjoyed contributing to the core concept through idea generation sessions and making key decisions on the content and features to be included in the final design.
-        </p>
-        <img src="UI_UX Boxing.png" alt="Boxing News App">
-      </article>
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Experience</p>
+          <h2 id="work-title">Recent Work</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">Jan 2026 - Present</div>
+          <div class="timeline-body">
+            <h3>Data Analyst Intern</h3>
+            <p class="meta">Happy Vision | Sheikh Zayed, Giza</p>
+            <ul>
+              <li>Engineered scraping scripts for more than 10,000 products while handling integrity checks and site-specific bottlenecks.</li>
+              <li>Built product classification flows for segments such as Kids and Adults to make raw catalog data easier to analyze.</li>
+              <li>Used all-MiniLM-L6-v2 embeddings and cosine similarity to identify near-duplicate products inside categories.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Aug - Sep 2025</div>
+          <div class="timeline-body">
+            <h3>AI Intern</h3>
+            <p class="meta">X-inity | Maadi, Cairo</p>
+            <ul>
+              <li>Adapted MediaPipe pose estimation for domain-specific landmark extraction.</li>
+              <li>Developed a Python program that automatically extracts body landmarks from Karate Katas.</li>
+              <li>Strengthened skills in OpenCV, computer vision pipelines, preprocessing, and ML model integration.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <!-- This form is now ready to send data to a Flask backend -->
-      <form action="/submit" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Projects</p>
+          <h2 id="projects-title">Built Systems</h2>
+        </div>
+      </div>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual market" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="project-content">
+            <p class="tag">Market Intelligence</p>
+            <h3>AI-Powered Scraping, Categorization and Market Intelligence</h3>
+            <p>
+              A Streamlit application that scrapes Shopify product data, cleans and normalizes records, categorizes
+              products, clusters similar items, tracks price changes, and supports market research.
+            </p>
+            <ul class="feature-list">
+              <li>Concurrent scraping and background jobs</li>
+              <li>Semantic search and product comparison dashboards</li>
+              <li>t-SNE market white-space visualization and cluster summaries</li>
+              <li>Local LM Studio-powered market advisor</li>
+            </ul>
+            <a class="text-link" href="https://github.com/mady-mohamed/WebScraping" target="_blank" rel="noreferrer">View project</a>
+          </div>
+        </article>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" required></textarea><br>
+        <article class="project-card">
+          <div class="project-visual pacman" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="project-content">
+            <p class="tag">Game AI</p>
+            <h3>Python Pacman Game with AI Implementation</h3>
+            <p>
+              A complete Pacman game from scratch in Python, combining object-oriented game architecture with AI
+              algorithms for intelligent ghost behavior.
+            </p>
+            <ul class="feature-list">
+              <li>A* search for predator-mode pathfinding</li>
+              <li>Greedy algorithm for evasive prey behavior</li>
+              <li>C++ optimization integrated through ctypes for a 20%+ performance gain</li>
+              <li>Pygame collision, movement, scoring, and level progression</li>
+            </ul>
+            <a class="text-link" href="https://github.com/mady-mohamed/Pacman" target="_blank" rel="noreferrer">View project</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <input type="submit" value="Send">
-      </form>
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Stack</p>
+          <h2 id="skills-title">Technical Skills</h2>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <article>
+          <h3>Machine Learning & Data</h3>
+          <p>Python, SQL, Pandas, NumPy, scikit-learn, PyTorch, NLP, SentenceTransformers, cosine similarity, clustering, t-SNE, statistical modeling</p>
+        </article>
+        <article>
+          <h3>Computer Vision</h3>
+          <p>MediaPipe, OpenCV, pose and landmark detection, data preprocessing, ML model integration</p>
+        </article>
+        <article>
+          <h3>Tools & Visualization</h3>
+          <p>Google Looker Studio, Streamlit, SQLite, Git/GitHub, Figma, CSV export, semantic search workflows</p>
+        </article>
+        <article>
+          <h3>Software Engineering</h3>
+          <p>Java, JavaScript, HTML/CSS, C++ optimization, OOP, web scraping, BeautifulSoup4, aiohttp, Requests, modular architecture</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section education-section" aria-labelledby="education-title">
+      <div>
+        <p class="section-kicker">Education</p>
+        <h2 id="education-title">Education</h2>
+      </div>
+      <div class="education-list">
+        <article>
+          <h3>B.Sc. in Software Engineering</h3>
+          <p>Arab Academy for Science, Technology and Maritime Transport | Cairo | Feb 2026</p>
+        </article>
+        <article>
+          <h3>Java Programming & Problem Solving</h3>
+          <p>Oxford Summer Course | Oxford, UK | July 2018</p>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer>© 2025 Mohamed Magdy, Projects licensed individually on <a href="https://github.com/mady-mohamed" target="_blank" rel="noopener">GitHub</a>.</footer>
+  <footer class="footer" id="contact">
+    <div>
+      <p class="section-kicker">Contact</p>
+      <h2>Let&apos;s build useful data products.</h2>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:mohamed.mady2000@gmail.com">mohamed.mady2000@gmail.com</a>
+      <a href="tel:+201006389017">+20 100 638 9017</a>
+      <a href="assets/Mohamed-Magdy-Mady-CV.pdf" target="_blank">Download CV</a>
+      <a href="https://www.linkedin.com/in/mohamed-magdy-mady" target="_blank" rel="noreferrer">LinkedIn</a>
+      <span>Giza, Egypt</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
